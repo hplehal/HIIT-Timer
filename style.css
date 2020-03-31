@@ -1,0 +1,130 @@
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Oswald", sans-serif;
+  min-height: 100vh;
+  color: #e6e6e6;
+  background: #50e696;
+  padding-top: 50px;
+}
+.hiitTimerCard {
+  display: flex;
+  font-size: 2em;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  margin: 0 auto;
+  background: #9799975b;
+  width: 50vw;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 10px 10px #3131315b;
+}
+.hiitTimerCard h1,
+h2,
+p {
+  margin: 0;
+}
+.roundExercise {
+  display: flex;
+  justify-content: space-evenly;
+}
+.status {
+  font-size: 4em;
+}
+.timer {
+  font-family: "Orbitron", sans-serif;
+  font-size: 6em;
+}
+
+button {
+  width: 30%;
+  padding: 8px;
+  color: #e6e6e6;
+  text-align: center;
+  background: #9799975b;
+  border-radius: 10px;
+  border: 1px solid #e6e6e6;
+  font-size: 3rem;
+  margin: 12px;
+}
+button:hover {
+  background: #3131315b;
+}
+.modal {
+  display: flex; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  width: 45%; /* Full width */
+  height: 90vh; /* Full height */
+  left: 28vw;
+  top: 20px;
+  overflow: auto; /* Enable scroll if needed */
+  /* background-color: rgb(0, 0, 0); Fallback color */
+  /* background-color: rgba(0, 0, 0, 0.4); Black w/ opacity */
+  background-color: #22a0b6f2;
+  box-shadow: 0 0 20px 2px #06394c;
+  border-radius: 15px;
+}
+.modal h1 {
+  font-size: 1.5em;
+}
+.modal-container {
+  margin: 3% auto;
+  padding: 20px;
+  width: 100%; /* Could be more or less, depending on screen size */
+}
+.close {
+  color: #06394cee;
+  float: right;
+  z-index: 100;
+  position: relative;
+  font-size: 50px;
+  font-weight: bold;
+}
+.close:hover,
+.close:focus {
+  color: #06394c7a;
+  text-decoration: none;
+  cursor: pointer;
+}
+.modal-content {
+  position: relative;
+  color: #e6e6e6;
+  font-size: 2.5rem;
+  cursor: auto;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+input {
+  color: #e6e6e6;
+  font-family: "Oswald", sans-serif;
+  font-size: 3rem;
+  background: none;
+  border: 1px solid #e6e6e6;
+  border-radius: 10px;
+  padding: 8px;
+  width: 50%;
+  text-align: center;
+  margin: 0 auto 15px;
+}
+.submitButton {
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  background: #06394cee;
+}
+.submitButton:hover {
+  background: #06394c7a;
+}
