@@ -76,7 +76,7 @@ button:hover {
 .modal h1 {
   font-size: 1.5em;
 }
-.modal-container {
+.modalContainer {
   margin: 3% auto;
   padding: 20px;
   width: 100%; /* Could be more or less, depending on screen size */
@@ -95,7 +95,7 @@ button:hover {
   text-decoration: none;
   cursor: pointer;
 }
-.modal-content {
+.modalContent {
   position: relative;
   color: #e6e6e6;
   font-size: 2.5rem;
@@ -127,4 +127,40 @@ input {
 }
 .submitButton:hover {
   background: #06394c7a;
+}
+@media (max-width: 1000px) {
+  .hiitTimerCard {
+    width: 80vw;
+  }
+  .modal {
+    width: 50%;
+  }
+  .modal h1 {
+    font-size: 1.3em;
+  }
+  .modalContainer {
+    margin: 3% auto;
+    padding: 20px;
+    width: 100%; /* Could be more or less, depending on screen size */
+  }
+}
+
+@media (max-width: 780px) {
+  .totalMinutes {
+    display: none;
+  }
+  .modal {
+    width: 60%;
+    height: 80vh;
+    left: 19vw;
+  }
+
+  button {
+    width: 44%;
+padding: 10px;
+  }
+
+  input{
+    font-size: 2rem;
+  }
 }

@@ -1,18 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Orbitron|Oswald&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <title>HIIT Training Timer | Project 1</title>
-  </head>
-  <body>
-    <!-- modal for the setup timer -->
-    <!-- <div id="trainingSetUp" class="modal">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css?family=Orbitron|Oswald&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <title>HIIT Training Timer | Project 1</title>
+</head>
+
+<body>
+  <!-- modal for the setup timer -->
+  <!-- <div id="trainingSetUp" class="modal">
       <div class="modal-content">
         <span class="close-modal">x</span>
         <div>
@@ -20,64 +19,50 @@
         </div>
       </div>
     </div> -->
-    <!-- Main Application -->
-    <main class="hiitTimerCard">
-      <h1>HIIT TIMER</h1>
-      <div class="roundExercise">
-        <h2 class="round"></h2>
-        <h2 class="totalMinutes"></h2>
-        <h2 class="exercise"></h2>
-      </div>
-      <h2 class="status">LET'S GO!</h2>
-      <h1 class="timer"></h1>
-      <div>
-        <button class="start">Start</button>
-        <button class="reset">Reset</button>
-      </div>
-      <div>
-        <button class="updateSetUp">Update</button>
-      </div>
-    </main>
-    <!-- Modal For the Set Up -->
-    <div id="trainingSetupModal" class="modal">
-      <div class="modal-container">
-        <span class="close">&times;</span>
-        <div class="modal-content">
-          <h1>Let's Set Up Your Training!</h1>
-          <form>
-            <label for="intervals">Intervals (Seconds):</label>
-            <input
-              class="setIntervals "
-              type="number"
-              name="intervals"
-              id="intervals"
-            />
-            <label for="rest">Rest Period (Seconds):</label>
-            <input type="number" name="rest" id="rest" class="setRest " />
-            <label for="numExercise">Number of Exercise</label>
-            <input
-              type="number"
-              name="exercise"
-              id="exercise"
-              class="numExercise "
-            />
-            <label for="rounds">How many rounds?</label>
-            <input
-              type="number"
-              name="rounds"
-              id="roounds"
-              class="numRounds "
-            />
+  <!-- Main Application -->
+  <main class="hiitTimerCard">
+    <h1>HIIT TIMER</h1>
+    <div class="roundExercise">
+      <h2 class="round"></h2>
+      <h2 class="totalMinutes"></h2>
+      <h2 class="exercise"></h2>
+    </div>
+    <h2 class="status">LET'S GO!</h2>
+    <h1 class="timer"></h1>
+    <div>
+      <button class="start">Start</button>
+      <button class="reset">Reset</button>
+    </div>
+    <div>
+      <button class="updateSetUp">Update</button>
+    </div>
+  </main>
+  <!-- Modal For the Set Up -->
+  <div id="trainingSetupModal" class="modal">
+    <div class="modalContainer">
+      <span class="close">&times;</span>
+      <div class="modalContent">
+        <h1>Let's Set Up Your Training!</h1>
+        <form>
+          <label for="intervals">Intervals (Seconds):</label>
+          <input class="setIntervals" type="number" id="intervals" />
+          <label for="rest">Rest Period (Seconds):</label>
+          <input type="number" id="rest" class="setRest " />
+          <label for="exercise">Number of Exercise</label>
+          <input type="number" id="exercise" class="numExercise " />
+          <label for="rounds">How many rounds?</label>
+          <input type="number" id="rounds" class="numRounds " />
 
-            <input type="submit" value="Let's Start" class="submitButton" />
-          </form>
-        </div>
+          <input type="submit" value="Let's Start" class="submitButton" />
+        </form>
       </div>
     </div>
+  </div>
 
-    <!-- load in jQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-    <!-- load in script.js -->
-    <script src="script.js"></script>
-  </body>
+  <!-- load in jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <!-- load in script.js -->
+  <script src="script.js"></script>
+</body>
+
 </html>
