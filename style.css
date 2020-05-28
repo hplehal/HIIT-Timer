@@ -167,3 +167,26 @@ padding: 10px;
     font-size: 2rem;
   }
 }
+
+@media (max-width: 500px) {
+  .modal {
+    width: 85%;
+    height: 91vh;
+    left: 8vw;
+}
+.hiitTimerCard {
+  font-size: 1.5em;
+}
+
+
+button {
+  width: 70%;
+  padding: 10px;
+  font-size: 2.5rem;
+}
+
+.timer {
+  font-size: 9em;
+}
+
+}
